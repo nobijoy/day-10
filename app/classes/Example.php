@@ -9,7 +9,7 @@ class Example
     public $lastName;
     public $x;
     public $y;
-
+    public $data = [];
 
     public function index(){
 
@@ -17,17 +17,33 @@ class Example
 //        $this->lastName  = 'Miya';
 //        echo "Fullname is: ".$this->firstName." ".$this->lastName;
 
-        $this->x = 20 ;
-        $this->y = 20 ;
-        $this->z = 30 ;
-        echo ($this->x > $this->y)&&($this->y > $this->z)
-        echo '<br/>....<br/>'
-        echo ($this->x > $this->y)&&($this->y < $this->z)
-        echo '<br/>....<br/>'
-        echo ($this->x < $this->y)&&($this->y > $this->z)
-        echo '<br/>....<br/>'
-        echo ($this->x < $this->y)&&($this->y < $this->z)
-        echo '<br/>....<br/>'
+        $this->data= [10, 20, 30, 'BITM', 100.200, true];
+        foreach ($this->data as $item){
+            echo $item;
+        }
+
+
+
+//        switch($this->x){
+//            case 10:
+//                echo 'Hello World';
+//                break;
+//            case 20:
+//                echo 'Hello BD';
+//                break;
+//            case 30:
+//                echo 'Hello dhaka';
+//                break;
+//            default:
+//                echo 'Hello BITM';
+//        }
+//        while ($this->x < 110){
+//            echo $this->x;
+//            $this->x++;
+//        }
+
+
+
 //        echo $this->x++;
 //        echo '<br>';
 //        echo $this->x;
@@ -48,8 +64,8 @@ class Example
 //        echo $this-> x.= $this->y;
 //        echo '<br>';
 
-        echo $this-> x < $this->y;
-        echo '<br>';
+//        echo $this-> x < $this->y;
+//        echo '<br>';
 
 //        echo $this-> x+ $this->y;
 //        echo '<br>';
@@ -60,6 +76,8 @@ class Example
 //        echo $this->x / $this->y;
 //        echo '<br>';
 //        echo $this->x % $this->y;
+
+
 
 
 
